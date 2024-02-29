@@ -1,0 +1,128 @@
+:root {
+  
+  /* FONTS */
+
+  --ff-serif: "Young Serif", serif;
+
+  --fw-regular: 400;
+  --fw-semi: 600;
+  --fw-bold: 700;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(29, 53%, 90%);
+  font-family: "Outfit", sans-serif;
+}
+
+.bg {
+  margin-inline: auto;
+  margin-block: 50px;
+  max-width: 720px;
+  background-color: white;
+  box-shadow: 0 1rem 1.5rem -0.5rem rgb(0 50 100  / 0.2);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+h1 {
+  color: hsl(24, 5%, 18%);
+  font-weight: var(--fw-semi);
+}
+
+img {
+  /* margin: auto; */
+  max-width: 100%;
+  border-radius: 15px;
+}
+
+.steps > p, li  , table th {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  font-weight: var(--fw-regular);
+}
+
+p {
+  padding-left: 10px;
+}
+
+li {
+  line-height: 2;
+}
+
+ol li {
+  font-weight: var(--fw-semi);
+}
+
+.instructions p span {
+  font-weight: var(--fw-regular);
+}
+
+li span {
+  font-weight: var(--fw-bold);
+}
+
+.brown , table td{
+  color: hsl(14, 45%, 36%);
+}
+
+.prep {
+  background-color: rgb(255, 247, 252);
+  padding-block: 10px;
+  padding-inline: 25px;
+  border-radius: 15px;
+}
+
+.prep > h2 {
+  color: hsl(332, 51%, 32%);
+  font-size: 22px;
+  padding-left: 10px;
+}
+
+.instructions h2, .ingredients h2, .nutrition h2 {
+  font-family: var(--ff-serif);
+  font-weight: var(--fw-regular);
+  padding-left: 10px;
+}
+
+.instructions p {
+  line-height: 1.2;
+}
+
+table {
+  width: 100%;
+  line-height: 2.5;
+  border-collapse: collapse;
+}
+
+table td {
+  font-weight: var(--fw-semi);
+  font-size: 16px;
+}
+
+table th {
+  display: flex;
+  padding-left: 30px;
+}
+
+.ingredients, .instructions{
+  border-bottom: 1px solid;
+  border-color:hsl(30, 18%, 87%);
+}
+
+.steps.nutrition table th,
+.steps.nutrition table td {
+  border-top: 1px solid hsl(30, 18%, 87%); /* Apply border to top */
+}
+
+.steps.nutrition table tr:first-child th,
+.steps.nutrition table tr:first-child td {
+  border-top: none; /* Remove border from the last row */
+}
+
+
+
+
